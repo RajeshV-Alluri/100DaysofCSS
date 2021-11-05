@@ -1,0 +1,99 @@
+.frame {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 400px;
+  height: 400px;
+  margin-top: -200px;
+  margin-left: -200px;
+  border-radius: 2px;
+  box-shadow: 4px 8px 16px 0 rgba(0, 0, 0, 0.1);
+  overflow: hidden;
+  background: #43389F;
+  background: linear-gradient(to top right, #43389F 0%, #4ec6ca 100%);
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr="#43389F", endColorstr="#4ec6ca",GradientType=1 );
+  color: #fff;
+  font-family: "Open Sans", Helvetica, sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  font-family: "Courier New", "Courier", sans-serif;
+}
+
+.center {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  display: flex;
+  flex-direction: column;
+}
+
+.numbers {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.numbers:nth-child(1) {
+  justify-content: normal;
+  align-items: normal;
+}
+.numbers .one-one {
+  height: 6.5em;
+  width: 1.5em;
+  border-radius: 3px;
+  background-color: #fff;
+  box-shadow: 0 0 13px 0 rgba(0, 0, 0, 0.2);
+  z-index: 3;
+}
+.numbers .one-two {
+  position: absolute;
+  margin-left: -1.2em;
+  margin-top: 0.0312em;
+  margin-right: 1em;
+  height: 2.8em;
+  width: 1.3em;
+  background-color: #fff;
+  transform: rotate(50deg);
+  border-radius: 3px;
+  box-shadow: 0 0 13px 0 rgba(0, 0, 0, 0.2);
+  z-index: 1;
+}
+.numbers .zero-one, .numbers .zero-two {
+  height: 6.5em;
+  width: 6.25em;
+  border: 1.5em solid #fff;
+  box-sizing: border-box;
+  border-radius: 50%;
+  box-shadow: 0 0 13px 0 rgba(0, 0, 0, 0.3);
+  z-index: 2;
+  margin-left: -0.6em;
+}
+.numbers .zero-two {
+  z-index: 1;
+  margin-left: -0.9em;
+}
+
+.days {
+  font-size: 5.2rem;
+  height: auto;
+  font-weight: 700;
+  position: relative;
+  margin: -0.15em 0;
+}
+
+.css-challenge {
+  font-size: 1.55rem;
+  font-weight: 700;
+  margin-top: -0.2em;
+}
+
+@media (max-width: 450px) {
+  .days {
+    margin: -0.2em 0;
+    margin-left: -0.05em;
+  }
+
+  .css-challenge {
+    margin-top: 0;
+  }
+}

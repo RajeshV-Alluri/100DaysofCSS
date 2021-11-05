@@ -1,0 +1,134 @@
+@import url(https://fonts.googleapis.com/css?family=Open+Sans:700,300);
+.frame {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 400px;
+  height: 400px;
+  margin-top: -200px;
+  margin-left: -200px;
+  border-radius: 2px;
+  box-shadow: 4px 8px 16px 0 rgba(0, 0, 0, 0.1);
+  overflow: hidden;
+  background: #42A7A1;
+  color: #333;
+  font-family: "Open Sans", Helvetica, sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.center {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.statistic {
+  height: 14em;
+  width: 17em;
+  background: #fff;
+  border-radius: 3px;
+  box-shadow: 10px 10px 15px 0 rgba(0, 0, 0, 0.3);
+}
+.statistic .header {
+  background: #F1BA64;
+  height: 12%;
+  border-radius: 3px 3px 0 0;
+  position: relative;
+  padding: 1em;
+}
+.statistic .header span {
+  color: #fff;
+}
+.statistic .header .title {
+  position: absolute;
+  left: 1em;
+  top: 1em;
+  font-size: 0.85rem;
+  font-weight: bold;
+}
+.statistic .header .date {
+  position: absolute;
+  left: 1.2em;
+  bottom: 1.3em;
+  font-size: 0.7rem;
+}
+.statistic .header .revenue {
+  position: absolute;
+  right: 1em;
+  top: 1.3em;
+  font-size: 0.78rem;
+}
+.statistic .header .amount {
+  position: absolute;
+  right: 0.8em;
+  bottom: 0.9em;
+  font-weight: bold;
+  font-size: 0.9rem;
+}
+.statistic .params {
+  position: relative;
+  text-align: right;
+  height: 1.5em;
+  padding: 0.7em;
+}
+.statistic .params span {
+  font-size: 0.7rem;
+  color: #606060;
+}
+.statistic .params span::before {
+  position: absolute;
+  top: 1.8em;
+  content: "";
+  height: 0.4em;
+  width: 1.1em;
+  border-radius: 3px;
+}
+.statistic .params .red {
+  margin-right: 2em;
+}
+.statistic .params .red::before {
+  right: 11em;
+  background: #FA7373;
+}
+.statistic .params .blue::before {
+  right: 6em;
+  background: #7BA2FF;
+}
+.statistic .graph {
+  position: relative;
+  padding: 0.7em;
+  height: 3.8em;
+}
+.statistic .graph .line1, .statistic .graph .line2, .statistic .graph .line3 {
+  background: #f2f2f2;
+  height: 1px;
+}
+.statistic .graph .line2 {
+  margin: 1.85em 0;
+}
+.statistic .graph .data svg {
+  position: absolute;
+  top: 0em;
+}
+.statistic .graph .data svg polyline {
+  fill: none;
+  stroke-width: 2;
+}
+.statistic .graph .data svg .red {
+  stroke: #FA7373;
+}
+.statistic .graph .data svg .blue {
+  stroke: #7BA2FF;
+}
+.statistic .days {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0.2em 0.7em;
+  color: #949494;
+}
+.statistic .days span {
+  font-size: 0.7rem;
+}

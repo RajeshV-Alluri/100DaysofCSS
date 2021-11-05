@@ -1,0 +1,119 @@
+@import url(https://fonts.googleapis.com/css?family=Open+Sans:700,300);
+.frame {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 400px;
+  height: 400px;
+  margin-top: -200px;
+  margin-left: -200px;
+  border-radius: 2px;
+  box-shadow: 4px 8px 16px 0 rgba(0, 0, 0, 0.1);
+  overflow: hidden;
+  background: #E56262;
+  color: #333;
+  font-family: "Open Sans", Helvetica, sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.center {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  height: 10em;
+  width: 10em;
+}
+
+.dot1 {
+  position: absolute;
+  top: 15%;
+  left: 15%;
+  z-index: 1;
+  height: 7em;
+  width: 7em;
+  border-radius: 50%;
+  background: #fff;
+  box-shadow: 1px 2px 10px 0 rgba(0, 0, 0, 0.5);
+  -webkit-animation: loadingCircle1 2s cubic-bezier(0.16, 0.98, 0.8, 0.98) alternate infinite;
+          animation: loadingCircle1 2s cubic-bezier(0.16, 0.98, 0.8, 0.98) alternate infinite;
+}
+
+.dot2 {
+  position: absolute;
+  top: 26.5%;
+  left: 26.5%;
+  z-index: 2;
+  height: 4.7em;
+  width: 4.7em;
+  border-radius: 50%;
+  background: #fff;
+  box-shadow: 2px 2px 10px 0 rgba(0, 0, 0, 0.5);
+  -webkit-animation: loadingCircle2 2s cubic-bezier(0.16, 0.98, 0.8, 0.98) alternate infinite;
+          animation: loadingCircle2 2s cubic-bezier(0.16, 0.98, 0.8, 0.98) alternate infinite;
+}
+
+.dot3 {
+  position: absolute;
+  top: 38%;
+  left: 38%;
+  z-index: 2;
+  height: 2.4em;
+  width: 2.4em;
+  border-radius: 50%;
+  background: #fff;
+  box-shadow: 2px 2px 10px 0 rgba(0, 0, 0, 0.5);
+  -webkit-animation: loadingCircle3 2s cubic-bezier(0.16, 0.98, 0.8, 0.98) alternate infinite;
+          animation: loadingCircle3 2s cubic-bezier(0.16, 0.98, 0.8, 0.98) alternate infinite;
+}
+
+@-webkit-keyframes loadingCircle1 {
+  0%, 10% {
+    transform: scale(0);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
+
+@keyframes loadingCircle1 {
+  0%, 10% {
+    transform: scale(0);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
+@-webkit-keyframes loadingCircle2 {
+  0%, 40% {
+    transform: scale(0);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
+@keyframes loadingCircle2 {
+  0%, 40% {
+    transform: scale(0);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
+@-webkit-keyframes loadingCircle3 {
+  0%, 70% {
+    transform: scale(0);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
+@keyframes loadingCircle3 {
+  0%, 70% {
+    transform: scale(0);
+  }
+  100% {
+    transform: scale(1);
+  }
+}

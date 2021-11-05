@@ -1,0 +1,79 @@
+@import url("https://fonts.googleapis.com/css2?family=Quicksand:wght@300;700&family=Roboto:wght@100;300&display=swap");
+body {
+  background: #fff;
+  font-family: quicksand, sans-serif;
+}
+
+.frame {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 250px;
+  height: 250px;
+  margin-top: -125px;
+  margin-left: -125px;
+  border-radius: 2px;
+  box-shadow: 0 0 0 6px #3a3a3a;
+  overflow: hidden;
+  background: #242424;
+  border-radius: 50%;
+  color: #fff;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.center {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+.center .clock {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  width: 10em;
+}
+.center .clock::before {
+  content: "";
+  position: absolute;
+  top: -3.2em;
+  left: -1.5em;
+  height: 200px;
+  width: 200px;
+  border-radius: 50%;
+  border: 3px dotted #fff;
+}
+.center .clock .date {
+  font-size: 1rem;
+}
+.center .clock .time {
+  font-size: 3.5rem;
+  font-weight: 700;
+}
+.center .clock .health-info {
+  display: flex;
+  justify-content: center;
+  margin-top: 0.5em;
+}
+.center .clock .health-info .beat {
+  font-size: 0.9rem;
+  margin: 0 0.8em;
+}
+.center .clock .health-info .beat .fa {
+  width: 1em;
+  color: #a83f39;
+}
+.center .clock .health-info .cal {
+  font-size: 0.9rem;
+}
+.center .circle {
+  position: absolute;
+  top: -3.95em;
+  left: -2.27em;
+  height: 220px;
+  width: 220px;
+  border-radius: 50%;
+  border: 5px solid #F85B5B;
+}

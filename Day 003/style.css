@@ -1,0 +1,273 @@
+@import url(https://fonts.googleapis.com/css?family=Open+Sans:700,300);
+.frame {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 400px;
+  height: 400px;
+  margin-top: -200px;
+  margin-left: -200px;
+  border-radius: 2px;
+  box-shadow: 4px 8px 16px 0 rgba(0, 0, 0, 0.1);
+  overflow: hidden;
+  background: #272C34;
+  color: #333;
+  font-family: "Open Sans", Helvetica, sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.center {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.circle {
+  position: relative;
+  height: 11.5em;
+  width: 11.5em;
+  border-radius: 50%;
+  -webkit-clip-path: circle(50%);
+          clip-path: circle(50%);
+}
+.circle .sky {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 11.5em;
+  background-color: #7DDFFC;
+  z-index: 0;
+  -webkit-animation: nightLight 4s cubic-bezier(0.4, 0, 0.49, 1) infinite;
+          animation: nightLight 4s cubic-bezier(0.4, 0, 0.49, 1) infinite;
+}
+.circle .sun {
+  position: absolute;
+  left: 40%;
+  top: 10%;
+  height: 2em;
+  width: 2em;
+  border-radius: 50%;
+  background-color: #FFEF00;
+  transform-origin: 50% 500%;
+  z-index: 1;
+  -webkit-animation: dawnDusk 4s cubic-bezier(0.4, 0, 0.49, 1) infinite;
+          animation: dawnDusk 4s cubic-bezier(0.4, 0, 0.49, 1) infinite;
+}
+.circle .figure1 {
+  position: relative;
+  top: 4em;
+  left: 2.65em;
+  height: 4em;
+  width: 5em;
+  background: #F4F4F4;
+  -webkit-clip-path: polygon(0% 100%, 60% 20%, 81% 100%);
+          clip-path: polygon(0% 100%, 60% 20%, 81% 100%);
+  z-index: 2;
+  -webkit-animation: pyramidColorChange 4s cubic-bezier(0.4, 0, 0.49, 1) infinite;
+          animation: pyramidColorChange 4s cubic-bezier(0.4, 0, 0.49, 1) infinite;
+}
+.circle .figure2 {
+  position: relative;
+  top: 0;
+  left: 5.61em;
+  height: 4em;
+  width: 5em;
+  background: #DDDADA;
+  -webkit-clip-path: polygon(21% 100%, 0.5% 20%, 60% 100%);
+          clip-path: polygon(21% 100%, 0.5% 20%, 60% 100%);
+  z-index: 2;
+  animation: pyramidColorChange 4s cubic-bezier(0.4, 0, 0.49, 1) infinite reverse;
+}
+.circle .shadow {
+  position: relative;
+  z-index: 2;
+  left: 2.5em;
+  height: 4em;
+  width: 8em;
+  background: rgba(0, 0, 0, 0.2);
+  -webkit-clip-path: polygon(10% 0%, 52% 0%, -100% 20%);
+          clip-path: polygon(10% 0%, 52% 0%, -100% 20%);
+  -webkit-animation: shadowEffect 4s cubic-bezier(0.4, 0, 0.49, 1) infinite;
+          animation: shadowEffect 4s cubic-bezier(0.4, 0, 0.49, 1) infinite;
+}
+.circle .ground {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  width: 11.5em;
+  height: 3.5em;
+  z-index: 1;
+  background: #F0DE75;
+  -webkit-animation: sand 4s cubic-bezier(0.4, 0, 0.49, 1) infinite;
+          animation: sand 4s cubic-bezier(0.4, 0, 0.49, 1) infinite;
+}
+
+@-webkit-keyframes nightLight {
+  0% {
+    background-color: #272C34;
+  }
+  30% {
+    background-color: #7DDFFC;
+  }
+  70% {
+    background-color: #7DDFFC;
+  }
+  100% {
+    background-color: #272C34;
+  }
+}
+
+@keyframes nightLight {
+  0% {
+    background-color: #272C34;
+  }
+  30% {
+    background-color: #7DDFFC;
+  }
+  70% {
+    background-color: #7DDFFC;
+  }
+  100% {
+    background-color: #272C34;
+  }
+}
+@-webkit-keyframes dawnDusk {
+  0% {
+    background: #F57209;
+    transform: rotate(-72deg);
+  }
+  30% {
+    background: #FFEF00;
+    transform: rotate(-20deg);
+  }
+  70% {
+    background: #FFEF00;
+  }
+  100% {
+    background: #F57209;
+    transform: rotate(75deg);
+  }
+}
+@keyframes dawnDusk {
+  0% {
+    background: #F57209;
+    transform: rotate(-72deg);
+  }
+  30% {
+    background: #FFEF00;
+    transform: rotate(-20deg);
+  }
+  70% {
+    background: #FFEF00;
+  }
+  100% {
+    background: #F57209;
+    transform: rotate(75deg);
+  }
+}
+@-webkit-keyframes pyramidColorChange {
+  0% {
+    background: #272C34;
+  }
+  30% {
+    background: #F4F4F4;
+  }
+  70% {
+    background: #DDDADA;
+  }
+  100% {
+    background: #272C34;
+  }
+}
+@keyframes pyramidColorChange {
+  0% {
+    background: #272C34;
+  }
+  30% {
+    background: #F4F4F4;
+  }
+  70% {
+    background: #DDDADA;
+  }
+  100% {
+    background: #272C34;
+  }
+}
+@-webkit-keyframes shadowEffect {
+  0% {
+    left: 2.5em;
+    height: 4em;
+    width: 8em;
+    -webkit-clip-path: polygon(0% 0%, 76% 0%, 200% 10%);
+            clip-path: polygon(0% 0%, 76% 0%, 200% 10%);
+  }
+  30% {
+    left: 2.5em;
+    height: 8em;
+    width: 8em;
+    -webkit-clip-path: polygon(0% 0%, 76% 0%, 100% 10%);
+            clip-path: polygon(0% 0%, 76% 0%, 100% 10%);
+  }
+  100% {
+    left: 0;
+    height: 8em;
+    width: 15em;
+    -webkit-clip-path: polygon(18% 0%, 56% 0%, -100% 20%);
+            clip-path: polygon(18% 0%, 56% 0%, -100% 20%);
+  }
+}
+@keyframes shadowEffect {
+  0% {
+    left: 2.5em;
+    height: 4em;
+    width: 8em;
+    -webkit-clip-path: polygon(0% 0%, 76% 0%, 200% 10%);
+            clip-path: polygon(0% 0%, 76% 0%, 200% 10%);
+  }
+  30% {
+    left: 2.5em;
+    height: 8em;
+    width: 8em;
+    -webkit-clip-path: polygon(0% 0%, 76% 0%, 100% 10%);
+            clip-path: polygon(0% 0%, 76% 0%, 100% 10%);
+  }
+  100% {
+    left: 0;
+    height: 8em;
+    width: 15em;
+    -webkit-clip-path: polygon(18% 0%, 56% 0%, -100% 20%);
+            clip-path: polygon(18% 0%, 56% 0%, -100% 20%);
+  }
+}
+@-webkit-keyframes sand {
+  0% {
+    background: #272C34;
+  }
+  30% {
+    background: #F0DE75;
+  }
+  70% {
+    background: #F0DE75;
+  }
+  100% {
+    background: #272C34;
+  }
+}
+@keyframes sand {
+  0% {
+    background: #272C34;
+  }
+  30% {
+    background: #F0DE75;
+  }
+  70% {
+    background: #F0DE75;
+  }
+  100% {
+    background: #272C34;
+  }
+}

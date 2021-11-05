@@ -1,0 +1,121 @@
+@import url(https://fonts.googleapis.com/css?family=Open+Sans:700,300);
+.frame {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 400px;
+  height: 400px;
+  margin-top: -200px;
+  margin-left: -200px;
+  border-radius: 2px;
+  box-shadow: 4px 8px 16px 0 rgba(0, 0, 0, 0.1);
+  overflow: hidden;
+  background: #000;
+  color: #333;
+  font-family: "Open Sans", Helvetica, sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  filter: contrast(30);
+}
+
+.center {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+.center .main-metaball {
+  height: 7em;
+  width: 7em;
+  background: #fff;
+  border-radius: 50%;
+  filter: blur(20px);
+}
+.center .large-metaball {
+  position: absolute;
+  top: 1em;
+  left: 1em;
+  height: 4em;
+  width: 4em;
+  background: #fff;
+  border-radius: 50%;
+  -webkit-animation: animate 2.5s cubic-bezier(0.34, 1.02, 0.76, 0.56) infinite;
+          animation: animate 2.5s cubic-bezier(0.34, 1.02, 0.76, 0.56) infinite;
+  filter: blur(10px);
+}
+.center .large1 {
+  transform-origin: 80% 80%;
+}
+.center .large2 {
+  background: #fff;
+  -webkit-animation: animate 2s linear infinite;
+          animation: animate 2s linear infinite;
+  transform-origin: 20% 40%;
+}
+.center .large3 {
+  background: #fff;
+  -webkit-animation: animate 2s linear infinite;
+          animation: animate 2s linear infinite;
+  transform-origin: 50% 80%;
+}
+.center .medium-metaball {
+  position: absolute;
+  top: 2em;
+  left: 2em;
+  height: 2.4em;
+  width: 2.4em;
+  background: #fff;
+  border-radius: 50%;
+  -webkit-animation: animate 2s cubic-bezier(0.34, 1.02, 0.76, 0.56) infinite;
+          animation: animate 2s cubic-bezier(0.34, 1.02, 0.76, 0.56) infinite;
+  filter: blur(10px);
+}
+.center .medium1 {
+  -webkit-animation-delay: 0.8s;
+          animation-delay: 0.8s;
+  transform-origin: -100% 50%;
+}
+.center .medium2 {
+  -webkit-animation-delay: 0.2s;
+          animation-delay: 0.2s;
+  transform-origin: 200% 120%;
+}
+.center .small-metaball {
+  position: absolute;
+  top: 1em;
+  left: 1em;
+  height: 2em;
+  width: 2em;
+  background: #fff;
+  border-radius: 50%;
+  -webkit-animation: animate 2s cubic-bezier(0.34, 1.02, 0.76, 0.56) infinite;
+          animation: animate 2s cubic-bezier(0.34, 1.02, 0.76, 0.56) infinite;
+  filter: blur(10px);
+}
+.center .small1 {
+  -webkit-animation-delay: 0.5s;
+          animation-delay: 0.5s;
+  transform-origin: 250% 250%;
+}
+.center .small2 {
+  transform-origin: 100% 300%;
+}
+.center .small3 {
+  transform-origin: 50% -150%;
+}
+@-webkit-keyframes animate {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+@keyframes animate {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
