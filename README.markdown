@@ -1,9 +1,15 @@
 # 100DaysofCSS Challenge
 100 Days of CSS challenge from [https://100dayscss.com](https://100dayscss.com) is coding 100 different CSS snipets for 100 days, one challenge a day.
 
+### 012 - #100DaysOfCSS
+
+Pen Details : [https://codepen.io/rajeshv-alluri/pen/KKvoZdE](https://codepen.io/rajeshv-alluri/pen/KKvoZdE).
+
+<img src="https://user-images.githubusercontent.com/63069749/140620956-3383b711-6530-4686-9548-80498194c624.jpg" height=40% width=40%>
+
 ### 011 - #100DaysOfCSS
 
-A Pen created on CodePen.io. Original URL: [https://codepen.io/rajeshv-alluri/pen/rNzJgKv](https://codepen.io/rajeshv-alluri/pen/rNzJgKv).
+Pen Details : [https://codepen.io/rajeshv-alluri/pen/rNzJgKv](https://codepen.io/rajeshv-alluri/pen/rNzJgKv).
 
 <img src="https://user-images.githubusercontent.com/63069749/140560172-d6221b96-ee8b-4658-bba7-c964601f0eb4.jpg" height=40% width=40%>
 

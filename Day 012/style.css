@@ -1,0 +1,92 @@
+@import url("https://fonts.googleapis.com/css2?family=Quicksand:wght@400;&display=swap");
+.frame {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 400px;
+  height: 400px;
+  margin-top: -200px;
+  margin-left: -200px;
+  border-radius: 2px;
+  box-shadow: 4px 8px 16px 0 rgba(0, 0, 0, 0.1);
+  overflow: hidden;
+  color: #000;
+  font-weight: 400;
+  background: #C1FBA4;
+  font-family: "Open Sans", Helvetica, sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.center {
+  width: 80%;
+}
+.center p {
+  margin: 2em 0 0 0;
+}
+.center .quote {
+  line-height: 1.5;
+  font-size: 1.4rem;
+}
+.center .quote .strong {
+  padding: 0.2em 0.4em;
+  cursor: pointer;
+  background: #286F8A;
+  color: #fff;
+}
+.center .author-div {
+  margin-top: 1.5em;
+}
+.center .author-div .author {
+  font-weight: 300;
+  font-size: 1.4rem;
+}
+.center .dictionary {
+  position: absolute;
+  top: 0;
+  left: 15%;
+  width: 70%;
+  background: #286F8A;
+  color: #fff;
+  line-height: 1.5;
+  border-radius: 3px;
+  opacity: 0;
+  transition: top 0.3s ease forwards, opacity 0.3s ease forwards;
+}
+.center .dictionary::after {
+  content: "";
+  height: 1em;
+  width: 1em;
+  background: #286F8A;
+  position: absolute;
+  top: 7.7em;
+  left: 7.6em;
+  transform: rotate(45deg);
+}
+.center .dictionary p {
+  margin: 0;
+  padding: 0.8em;
+}
+.center .dictionary .pronunciation {
+  background: #fff;
+  color: #286F8A;
+  padding: 0.3em 0.8em;
+  display: flex;
+  align-items: center;
+}
+.center .dictionary .pronunciation .fa {
+  margin-left: 0.5em;
+  cursor: pointer;
+  height: 1em;
+  width: 1em;
+}
+.center .dictionary .pronunciation .fa:hover {
+  font-size: 1.2em;
+}
+.center .active {
+  opacity: 1;
+  top: 1em;
+}
